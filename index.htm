@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </head>
 <body>
@@ -24,10 +24,11 @@
         <i class="fas fa-angle-up"></i>
     </div> -->
    <div class="site-main-wrapper">
-       <button class="hamberger">
+       <button class="hamberger" id="toggle">
            <img src="./images/hamberger.svg" alt="">
        </button>
-       <div class="mobile-nav">
+       <!-- <div id="toggle"></div> -->
+       <div class="mobile-nav" id="sidebar">
         <div class="brand">
             <img src="./images/logo1.svg" alt="">
         </div>
@@ -35,8 +36,8 @@
            <ul>
                <li><a href="#">Home</a></li>
                <li><a href="#about">About</a></li>
-               <li><a href="#projects">Projects</a></li>
                <li><a href="#services">Services</a></li>
+               <li><a href="#projects">Projects</a></li>
                <li><a href="#blog">Blog</a></li>
            </ul>
            <a href="#contact"><button class="btn btn-primary">Contact</button></a>
@@ -52,8 +53,8 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="#">Home</a>
                     <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
                     <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
                     <a href="#blog">Blog</a>
                 </div>
             </div>
@@ -83,9 +84,12 @@
                 <img class="about-me-img" src="./images/man-2.png" alt="">
             </div>
             <div class="flex-1 right">
-            <h1>About <span>Us</span></h1>
+            <h1>About <span>Me</span></h1>
             <h3>Hello! i'm Anukalp Mishra.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quod quidem amet voluptas reiciendis et facere voluptatibus, accusamus illum ipsa esse illo eos culpa excepturi numquam repellendus eius ullam magnam.</p>
+            <p>I'm a Full-stack Developer experienced in Frontend Web Development, Digital Marketing & Offline Marketing.<br>
+                When I am not coding, I am organising or taking part in workshops, webinars & hackathons, writing blogs and solving doubts.<br>
+                
+                I'm always open to have a talk about anything and look forward to getting connected with you.</p>
             <div class="social">
                 <!-- <a href="#"><img src="./images/website.svg" alt=""></a> -->
                 <a href="https://github.com/anukalp-mishra"><img class="git" src="./images/github.svg" alt=""></a>
@@ -99,7 +103,7 @@
     <section id="services" class="services">
         <div class="container">
             <h1 class="section-heading"><span>Our </span>Services</h1>
-            <p>We provide high standar clean website for your business solutions</p>
+            <p>We provide high standard clean website for your business solutions</p>
             <div class="card-wrapper">
                 <div class="card">
                     <img class="card1" src="./images/brush3.svg" alt="">
@@ -142,13 +146,13 @@
     </section>
     <section class="freelancer">
         <h1>I'm Available For Freelancing.</h1>
-        <p>We provide high standar clean website for your business solutions</p>
+        <p>We provide high standard clean website for your business solutions</p>
         <button class="btn btn-primary">Download CV</button>
     </section>
     <section class="reviews">
         <div class="container">
             <h1 class="section-heading"><span>Our </span>Client</h1>
-            <p>We provide high standar clean website for your business solutions</p>
+            <p>We provide high standard clean website for your business solutions</p>
             <div class="slider">
                 <div class="slide">
                     <img src="./images/rev1.svg" alt="">
@@ -177,7 +181,7 @@
     <section id="projects" class="work">
         <div class="container">
             <h1 class="section-heading"><span>My </span>Projects</h1>
-            <p>We provide high standar clean website for your business solutions</p>
+            <p>We provide high standard clean website for your business solutions</p>
             <div class="card-wrapper">
                 <div class="card">
                     <div class="overlay">
@@ -227,7 +231,7 @@
     <section id="blog" class="blog">
         <div class="container">
             <h1 class="section-heading"><span>My </span>Blog</h1>
-            <p>We provide high standar clean website for your business solutions</p>
+            <p>We provide high standard clean website for your business solutions</p>
             <div class="card-wrapper">
                 <div class="card">
                     <div class="img-wrapper">
@@ -274,7 +278,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <h1 class="section-heading">Contact <span>Us</span></h1>
-            <p>We provide high standar clean website for your business solutions</p>
+            <p>We provide high standard clean website for your business solutions</p>
             <div class="card-wrapper">
                 <div class="card">
                     <img src="./images/smartphone.svg" alt="">
@@ -346,5 +350,22 @@
             progress.style.height = progressheight + "%";
         }
         </script>
+        <!-- <script>
+            const toggle=document.getElementById('toggle');
+            const sidebar=document.getElementById('sidebar');
+
+            document.onclick=function(e){
+                if(e.target.id !=='sidebar' && e.target.id !=='toggle')
+                {
+                    toggle.classList.remove('active');
+                    sidebar.classList.remove('active')
+                }
+            }
+
+            toggle.onclick=function(){
+                toggle.classList.toggle('active');
+                sidebar.classList.toggle('active');
+            }
+        </script> -->
 </body>
 </html>

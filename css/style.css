@@ -59,6 +59,45 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+/* side navbar  */
+
+/* #toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: var(--light);
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+#toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: var(--light);
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+#toggle.active::before {
+  transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after {
+  transform: translateY(0px) rotate(-45deg);
+} */
+
 html {
   scroll-behavior: smooth;
 }
@@ -560,6 +599,37 @@ footer .copyright {
   transform: translate(-100%);
   transition: all 0.5s ease-in-out;
 }
+/* #sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: var(--dark);
+  transition: 0.5s;
+}
+#sidebar.active {
+  left: 0px;
+}
+#sidebar ul {
+  position: relative;
+  margin-top: 50px;
+}
+#sidebar ul li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 40px;
+}
+#sidebar ul li:hover {
+  background: var(--primary);
+}
+#sidebar ul li a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.5px;
+  letter-spacing: 2px;
+} */
 .open {
   transform: translate(0);
 }
