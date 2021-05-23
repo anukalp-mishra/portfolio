@@ -18,6 +18,9 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
+.btn a {
+  text-decoration: none;
+}
 .btn-primary {
   background: var(--primary);
   color: var(--secondary);
