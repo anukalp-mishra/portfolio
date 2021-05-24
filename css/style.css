@@ -440,7 +440,7 @@ section.work .card-wrapper .card img {
   border-radius: 2px;
 }
 .skill_level {
-  background: dodgerblue;
+  background: var(--primary);
   width: 100%;
   height: 10px;
 }
